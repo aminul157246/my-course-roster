@@ -9,6 +9,7 @@ function App() {
   const [selectedCarts, setSelectedCarts]
   = useState([])   
   const [totalRemaining, setTotalRemaining] = useState(0)
+  const [totalCredit, setTotalCredit] = useState(0)
   const [total, setTotal] = useState(0)
 
 const handleAddToCart = cart => {
@@ -28,6 +29,7 @@ selectedCarts.forEach(item => {
   count = count + item.credit
   total = total + item.price
 });
+setTotalCredit(count)
 setTotal(total);
 
 const totalRemaining = 20 - count
@@ -53,6 +55,7 @@ else {
       <div className='flex justify-between mx-12 gap-12'>
         <Cards handleAddToCart = {handleAddToCart}></Cards>
         <Carts selectedCarts = {selectedCarts}
+        totalCredit = {totalCredit}
         totalRemaining = {totalRemaining}
         total = {total}
         ></Carts>

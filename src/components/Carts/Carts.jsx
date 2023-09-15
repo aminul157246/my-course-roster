@@ -1,6 +1,6 @@
 
 import SingleCart from '../singleCart/SingleCart'
-const Carts = ({selectedCarts, totalRemaining, total}) => {
+const Carts = ({selectedCarts, totalRemaining, totalCredit,total}) => {
 
     return (
         <div className=" w-1/3   card-container mt-20">
@@ -11,11 +11,13 @@ const Carts = ({selectedCarts, totalRemaining, total}) => {
             { 
                 
                 selectedCarts.map((singleCart, idx) => <li >{idx+1} <SingleCart key={idx}
+                totalCredit= {totalCredit}
                 totalRemaining = {totalRemaining}
                 total = {total}
                 singleCart={singleCart}></SingleCart></li>)
             }
             </div>
+            <h2 className='text-2xl font-bold mt-8'>Total Credit :  {totalCredit}hrs</h2>
             <h3 className='text-xl font-bold mt-8'>Total Price : {total}$</h3>
         </div>
     );
