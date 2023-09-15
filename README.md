@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # 1. 3 Features of my Course Registration Assignment
 
 ## a. SweetAlert:
