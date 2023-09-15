@@ -1,5 +1,4 @@
 
-import './Card.css'
 
 const Card = ({card,handleAddToCart }) => {
     const {title,image,description,credit,price}= card;

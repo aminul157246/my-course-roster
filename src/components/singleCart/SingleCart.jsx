@@ -5,7 +5,7 @@ const SingleCart = ({singleCart }) => {
             <div>
                 
                 {
-                    <h2 className="text-2xl font-bold text-center">{title}</h2> 
+                    <h2 className="text-2xl font-semibold  text-center">{title}</h2> 
                 }
             </div>
     );
