@@ -4,8 +4,6 @@ import './App.css'
 import Cards from './components/cards/Cards'
 import Swal from 'sweetalert2'
 import Carts from './components/Carts/Carts'
-// import 'sweetalert2/src/sweetalert2.scss'
-// import '@sweetalert2/themes/dark/dark.scss'
 function App() {
 
   const [selectedCarts, setSelectedCarts]
@@ -64,70 +62,4 @@ else {
   )
 
 }
-export default App
-
-
-
-
-
-
-
-/* 
-
-
-
-
-import { useState } from 'react'
-import './App.css'
-import Blogs from './Component/Blogs/Blogs'
-import Bookmarks from './Component/Bookmarks/Bookmarks'
-import Header from './Component/Header/Header'
-
-function App() {
-
-const [bookmarks , setBookmarks] = useState([])
-const [readingTime, setReadingTime] = useState([])
-
-
-const handleAddToBookmark = blog => {
-  console.log('adding soon.......', blog)
-  const newBookmarks = [...bookmarks, blog]
-  setBookmarks(newBookmarks)
-}
-
-const handleReadingTime = (time, id) => {
-  console.log('reading.....', time)
-  const newReadingTime = readingTime + time;
-  setReadingTime(newReadingTime)
-
-  const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id)
-setBookmarks(remainingBookmarks)
-
-}
-
-
-
-  return (
-    <>
-      
-      <Header></Header>
-      <main className='flex max-w-7xl mx-auto'>
-      <Blogs handleAddToBookmark = {handleAddToBookmark} handleReadingTime = {handleReadingTime}></Blogs>
-      <Bookmarks bookmarks = {bookmarks} readingTime ={readingTime}></Bookmarks>
-      </main>
-      
-    </>
-  )
-}
-
-export default App
-
-
-
-
-
-
-
-
-
-*/
+export default App;
