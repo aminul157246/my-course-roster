@@ -16,7 +16,7 @@ const Carts = ({selectedCarts, totalRemaining, total}) => {
                     singleCart={singleCart}></SingleCart>)
             }
             </div>
-            <h3 className='text-xl font-bold mt-8'>Total = {total} $</h3>
+            <h3 className='text-xl font-bold mt-8'>Total Price : {total}$</h3>
         </div>
     );
 };

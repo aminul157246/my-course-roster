@@ -4,7 +4,7 @@ const Card = ({card,handleAddToCart }) => {
     const {title,image,description,credit,price}= card;
     return (
 
-<div className="card bg-base-100 shadow-xl p-10">
+<div className="card bg-base-100 shadow-xl p-12">
         <figure><img className='mb-2' src={image} alt="" /></figure>
     <div className="card-body">
         <h2 className='text-2xl font-bold mb-2'>{title}</h2>
