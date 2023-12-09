@@ -1,3 +1,11 @@
+> ## Live link : https://cloistered-straw.surge.sh/
+
+ > ## Technologies I used in this website : 
+
+ 
+ [![My Skills](https://skillicons.dev/icons?i=html,js,css,react)](https://skillicons.dev)
+
+
 
 # 1. 3 Features of my Course Registration Assignment
 
