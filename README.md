@@ -38,4 +38,3 @@
      It specifies when the effect should run. If it's an empty array ([]), the effect runs only once after the component mounts. If you provide 
      dependencies (e.g., [prop1, prop2] or [stateVariable]), the effect will run whenever any of those dependencies change. But I used just empty
      array because I need runs my data one time. i used many times these two hook in my projects.
->>>>>>> b18dbfe7a1200a9b538c212054415e23dd4f4f00
